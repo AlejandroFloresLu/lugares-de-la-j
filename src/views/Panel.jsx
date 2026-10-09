@@ -116,6 +116,16 @@ export function Panel() {
         </div>
 
         <Publicaciones />
+
+        <Link to="/panel/anunciar" className="group mt-6 flex flex-wrap items-center justify-between gap-4 border border-line p-5 hover:border-ink sm:p-6">
+          <div>
+            <p className="text-[16px] font-medium">sal primero en la guía lugares de la j</p>
+            <p className="mt-1 text-[14px] text-ink-2">es donde los vecinos deciden dónde comer y comprar. mira los planes de anuncio.</p>
+          </div>
+          <span className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.14em]">
+            ver planes <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
+          </span>
+        </Link>
       </div>
     </PanelShell>
   )

@@ -5,11 +5,15 @@ import { DemoBar } from './components/DemoBar'
 import { Web } from './views/Web'
 import { Panel } from './views/Panel'
 import { Publicar } from './views/Publicar'
+import { Anunciar } from './views/Anunciar'
+import { Guia } from './views/Guia'
 
 /* La demo es un solo flujo:
    1. /web             → la web del local, conectada a Google Maps
    2. /panel           → el panel del dueño con sus métricas
-   3. /panel/publicar  → publica una novedad y mírala en la web       */
+   3. /panel/publicar  → publica una novedad y mírala en la web
+   4. /panel/anunciar  → elige un plan de anuncio en la guía
+   5. /guia            → la guía "lugares de la j" que ve el cliente final */
 
 function ScrollArriba() {
   const { pathname, search } = useLocation()
@@ -29,6 +33,8 @@ export default function App() {
           <Route path="/web" element={<Web />} />
           <Route path="/panel" element={<Panel />} />
           <Route path="/panel/publicar" element={<Publicar />} />
+          <Route path="/panel/anunciar" element={<Anunciar />} />
+          <Route path="/guia" element={<Guia />} />
           <Route path="*" element={<Navigate to="/web" replace />} />
         </Routes>
         <DemoBar />

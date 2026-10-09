@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-import { ArrowUpRight, LayoutGrid, PenLine } from 'lucide-react'
+import { ArrowUpRight, LayoutGrid, Megaphone, PenLine } from 'lucide-react'
 import { negocio } from '../data/negocio'
 
 /* Marco común del panel del dueño (resumen y publicar). */
@@ -7,6 +7,7 @@ export function PanelShell({ children }) {
   const items = [
     { to: '/panel', label: 'resumen', icon: LayoutGrid, end: true },
     { to: '/panel/publicar', label: 'publicar', icon: PenLine },
+    { to: '/panel/anunciar', label: 'anunciar', icon: Megaphone },
   ]
   return (
     <div className="min-h-dvh bg-paper text-ink lg:grid lg:grid-cols-[232px_1fr]">
