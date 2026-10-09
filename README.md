@@ -2,6 +2,13 @@
 
 Todo lo necesario para salir a visitar locales: **la presentación** y **el demo**.
 
+## 🌐 En línea (sin instalar nada)
+
+- **Demo:** https://alejandrofloreslu.github.io/lugares-de-la-j/
+- **Presentación:** https://alejandrofloreslu.github.io/lugares-de-la-j/presentacion/
+
+Cada vez que subes cambios a `main`, el sitio se vuelve a publicar solo (tarda 1–2 minutos).
+
 ## 1. Presentación (10 minutos)
 
 Abre `presentacion/index.html` con doble clic. Se abre en el navegador, sin instalar nada.

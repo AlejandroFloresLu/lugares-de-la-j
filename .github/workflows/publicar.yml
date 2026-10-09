@@ -1,0 +1,33 @@
+# Publica el demo y la presentación en GitHub Pages (rama gh-pages)
+# cada vez que se sube algo a main.
+name: Publicar en GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Agregar la presentación al sitio
+        run: |
+          mkdir -p dist/presentacion
+          cp presentacion/index.html dist/presentacion/index.html
+          touch dist/.nojekyll
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
