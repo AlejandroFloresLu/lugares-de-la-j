@@ -4,7 +4,7 @@ import { publicacionesIniciales } from '../data/negocio'
 /* Estado compartido de la demo: lo que el local publica y el anuncio que
    compra. Se guarda en el navegador para que, si recargas la página durante
    la reunión, siga ahí. "reiniciar demo" lo deja todo como al inicio. */
-const KEY = 'casa-olmo-publicaciones-v2'
+const KEY = 'casa-olmo-publicaciones-v3'
 const KEY_ANUNCIO = 'casa-olmo-anuncio-v1'
 const Ctx = createContext(null)
 

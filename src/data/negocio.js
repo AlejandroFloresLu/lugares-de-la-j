@@ -80,7 +80,7 @@ export const fotosEjemplo = [
   u('1495474472287-4d71bcdd2085', 1200),
   u('1484723091739-30a097e8f929', 1200),
   u('1497515114629-f71d768fd07c', 1200),
-  u('1486427944299-d1955d23e34d', 1200),
+  u('1568254183919-78a4f43a2877', 1200),
 ]
 
 export const categorias = [
@@ -97,7 +97,7 @@ export const publicacionesIniciales = [
     categoria: 'nuevo',
     titulo: 'llegó el pan de chocolate.',
     texto: 'masa madre con cacao y chispas de chocolate amargo. sale los viernes y sábados desde las 8:00.',
-    foto: u('1486427944299-d1955d23e34d', 1200),
+    foto: u('1568254183919-78a4f43a2877', 1200),
     vigencia: 'esta semana',
     fecha: 'hace 3 días',
   },
